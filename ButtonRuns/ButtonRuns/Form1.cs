@@ -16,5 +16,10 @@ namespace ButtonRuns
         {
             InitializeComponent();
         }
+
+        private void first_button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

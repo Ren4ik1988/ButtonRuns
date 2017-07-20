@@ -1,0 +1,9 @@
+E:\ProjectsGit\buttonRuns\ButtonRuns\ButtonRuns\bin\Debug\ButtonRuns.exe.config
+E:\ProjectsGit\buttonRuns\ButtonRuns\ButtonRuns\bin\Debug\ButtonRuns.exe
+E:\ProjectsGit\buttonRuns\ButtonRuns\ButtonRuns\bin\Debug\ButtonRuns.pdb
+E:\ProjectsGit\buttonRuns\ButtonRuns\ButtonRuns\obj\Debug\ButtonRuns.csprojResolveAssemblyReference.cache
+E:\ProjectsGit\buttonRuns\ButtonRuns\ButtonRuns\obj\Debug\ButtonRuns.Form1.resources
+E:\ProjectsGit\buttonRuns\ButtonRuns\ButtonRuns\obj\Debug\ButtonRuns.Properties.Resources.resources
+E:\ProjectsGit\buttonRuns\ButtonRuns\ButtonRuns\obj\Debug\ButtonRuns.csproj.GenerateResource.Cache
+E:\ProjectsGit\buttonRuns\ButtonRuns\ButtonRuns\obj\Debug\ButtonRuns.exe
+E:\ProjectsGit\buttonRuns\ButtonRuns\ButtonRuns\obj\Debug\ButtonRuns.pdb
