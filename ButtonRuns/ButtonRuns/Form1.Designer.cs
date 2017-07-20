@@ -32,7 +32,7 @@
             this.stop_btn = new System.Windows.Forms.Button();
             this.pause_btn = new System.Windows.Forms.Button();
             this.start_btn = new System.Windows.Forms.Button();
-            this.first_button = new System.Windows.Forms.Button();
+            this.first_btn = new System.Windows.Forms.Button();
             this.second_btn = new System.Windows.Forms.Button();
             this.third_btn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -74,16 +74,17 @@
             this.start_btn.TabIndex = 1;
             this.start_btn.Text = "Start";
             this.start_btn.UseVisualStyleBackColor = true;
+            this.start_btn.Click += new System.EventHandler(this.start_btn_Click);
             // 
-            // first_button
+            // first_btn
             // 
-            this.first_button.Location = new System.Drawing.Point(31, 25);
-            this.first_button.Name = "first_button";
-            this.first_button.Size = new System.Drawing.Size(75, 23);
-            this.first_button.TabIndex = 1;
-            this.first_button.Text = "button1";
-            this.first_button.UseVisualStyleBackColor = true;
-            this.first_button.Click += new System.EventHandler(this.first_button_Click);
+            this.first_btn.Location = new System.Drawing.Point(31, 25);
+            this.first_btn.Name = "first_btn";
+            this.first_btn.Size = new System.Drawing.Size(75, 23);
+            this.first_btn.TabIndex = 1;
+            this.first_btn.Text = "button1";
+            this.first_btn.UseVisualStyleBackColor = true;
+            this.first_btn.Click += new System.EventHandler(this.first_button_Click);
             // 
             // second_btn
             // 
@@ -110,10 +111,10 @@
             this.ClientSize = new System.Drawing.Size(1268, 261);
             this.Controls.Add(this.third_btn);
             this.Controls.Add(this.second_btn);
-            this.Controls.Add(this.first_button);
+            this.Controls.Add(this.first_btn);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Гонки";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -125,7 +126,7 @@
         private System.Windows.Forms.Button stop_btn;
         private System.Windows.Forms.Button pause_btn;
         private System.Windows.Forms.Button start_btn;
-        private System.Windows.Forms.Button first_button;
+        private System.Windows.Forms.Button first_btn;
         private System.Windows.Forms.Button second_btn;
         private System.Windows.Forms.Button third_btn;
     }
