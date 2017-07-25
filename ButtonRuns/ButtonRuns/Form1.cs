@@ -24,16 +24,26 @@ namespace ButtonRuns
 
         MoveDel move;
 
+        ButtonCompare [] buttonsMassiv; // массив кнопок
+
         public Form1()
         {
             move = new MoveDel(Moution);
             r = new Random();
             InitializeComponent();
+
+            buttonsMassiv = new ButtonCompare[] {first_btn, second_btn, third_btn};
         }
 
         void Moution(Button button)
         {
             button.Location = new Point(button.Location.X + r.Next(0,10), button.Location.Y);
+            Lider();
+        }
+
+        private void Lider()
+        {
+            Array.Sort(buttonsMassiv);
         }
 
         void MovingButton1()

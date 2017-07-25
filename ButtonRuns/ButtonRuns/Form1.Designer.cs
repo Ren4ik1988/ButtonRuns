@@ -32,10 +32,12 @@
             this.stop_btn = new System.Windows.Forms.Button();
             this.pause_btn = new System.Windows.Forms.Button();
             this.start_btn = new System.Windows.Forms.Button();
-            this.first_btn = new System.Windows.Forms.Button();
-            this.second_btn = new System.Windows.Forms.Button();
-            this.third_btn = new System.Windows.Forms.Button();
+            this.first_btn = new ButtonCompare();
+            this.second_btn = new ButtonCompare();
+            this.third_btn = new ButtonCompare();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -105,11 +107,21 @@
             this.third_btn.Text = "button1";
             this.third_btn.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ButtonRuns.Properties.Resources.Finish;
+            this.pictureBox1.Location = new System.Drawing.Point(842, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(10, 121);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1268, 261);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.third_btn);
             this.Controls.Add(this.second_btn);
             this.Controls.Add(this.first_btn);
@@ -118,19 +130,21 @@
             this.Text = "Гонки";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+        private ButtonCompare first_btn;
+        private ButtonCompare second_btn;
+        private ButtonCompare third_btn;
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button stop_btn;
         private System.Windows.Forms.Button pause_btn;
         private System.Windows.Forms.Button start_btn;
-        private System.Windows.Forms.Button first_btn;
-        private System.Windows.Forms.Button second_btn;
-        private System.Windows.Forms.Button third_btn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
