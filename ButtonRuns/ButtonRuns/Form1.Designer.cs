@@ -56,6 +56,7 @@
             this.stop_btn.TabIndex = 1;
             this.stop_btn.Text = "Stop";
             this.stop_btn.UseVisualStyleBackColor = true;
+            this.stop_btn.Click += new System.EventHandler(this.stop_btn_Click);
             // 
             // pause_btn
             // 
@@ -65,6 +66,7 @@
             this.pause_btn.TabIndex = 1;
             this.pause_btn.Text = "Pause";
             this.pause_btn.UseVisualStyleBackColor = true;
+            this.pause_btn.Click += new System.EventHandler(this.pause_btn_Click);
             // 
             // start_btn
             // 
@@ -84,7 +86,6 @@
             this.first_btn.TabIndex = 1;
             this.first_btn.Text = "button1";
             this.first_btn.UseVisualStyleBackColor = true;
-            this.first_btn.Click += new System.EventHandler(this.first_button_Click);
             // 
             // second_btn
             // 

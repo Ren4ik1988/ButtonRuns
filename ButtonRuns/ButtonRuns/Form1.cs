@@ -31,11 +31,6 @@ namespace ButtonRuns
             InitializeComponent();
         }
 
-        private void first_button_Click(object sender, EventArgs e)
-        {
-
-        }
-
         void Moution(Button button)
         {
             button.Location = new Point(button.Location.X + r.Next(0,10), button.Location.Y);
@@ -70,6 +65,16 @@ namespace ButtonRuns
 
         private void start_btn_Click(object sender, EventArgs e)
         {
+            start_btn.Enabled = false;
+
+            if (t1 != null)
+            {
+                t1.Resume();
+                t2.Resume();
+                t3.Resume();
+                
+                return;
+            }
             t1 = new Thread(MovingButton1);
             t2 = new Thread(MovingButton2);
             t3 = new Thread(MovingButton3);
@@ -79,6 +84,33 @@ namespace ButtonRuns
             t1.Start();
             t2.Start();
             t3.Start();
+        }
+
+        private void pause_btn_Click(object sender, EventArgs e)
+        {
+            if (t1 != null)
+            {
+                t1.Suspend();
+                t2.Suspend();
+                t3.Suspend();
+
+                start_btn.Enabled = true;
+            }
+        }
+
+        private void stop_btn_Click(object sender, EventArgs e)
+        {
+            pause_btn_Click(sender, e);
+
+            Reset();
+
+        }
+
+        private void Reset()
+        {
+            first_btn.Location = new Point(31, first_btn.Location.Y);
+            second_btn.Location = new Point(31, second_btn.Location.Y);
+            third_btn.Location = new Point(31, third_btn.Location.Y);
         }
     }
 }
