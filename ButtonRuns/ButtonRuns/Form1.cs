@@ -112,5 +112,10 @@ namespace ButtonRuns
             second_btn.Location = new Point(31, second_btn.Location.Y);
             third_btn.Location = new Point(31, third_btn.Location.Y);
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            stop_btn_Click(new object(), e);
+        }
     }
 }
