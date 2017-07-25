@@ -44,6 +44,10 @@ namespace ButtonRuns
         private void Lider()
         {
             Array.Sort(buttonsMassiv);
+            buttonsMassiv[0].BackColor = Color.Yellow;
+
+            for (int i = 1; i < buttonsMassiv.Length; i++)
+                buttonsMassiv[i].BackColor = SystemColors.Control;
         }
 
         void MovingButton1()
@@ -75,6 +79,8 @@ namespace ButtonRuns
 
         private void start_btn_Click(object sender, EventArgs e)
         {
+            stop_btn.Enabled = true;
+            pause_btn.Enabled = true;
             start_btn.Enabled = false;
 
             if (t1 != null)
@@ -98,18 +104,19 @@ namespace ButtonRuns
 
         private void pause_btn_Click(object sender, EventArgs e)
         {
-            if (t1 != null)
-            {
-                t1.Suspend();
-                t2.Suspend();
-                t3.Suspend();
+            pause_btn.Enabled = false;
 
-                start_btn.Enabled = true;
-            }
+            t1.Suspend();
+            t2.Suspend();
+            t3.Suspend();
+
+            start_btn.Enabled = true;
         }
 
         private void stop_btn_Click(object sender, EventArgs e)
         {
+            stop_btn.Enabled = pause_btn.Enabled = false;
+
             pause_btn_Click(sender, e);
 
             Reset();

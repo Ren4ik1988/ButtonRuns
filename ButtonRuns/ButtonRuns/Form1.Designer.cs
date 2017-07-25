@@ -32,9 +32,9 @@
             this.stop_btn = new System.Windows.Forms.Button();
             this.pause_btn = new System.Windows.Forms.Button();
             this.start_btn = new System.Windows.Forms.Button();
-            this.first_btn = new ButtonCompare();
-            this.second_btn = new ButtonCompare();
-            this.third_btn = new ButtonCompare();
+            this.first_btn = new ButtonRuns.ButtonCompare();
+            this.second_btn = new ButtonRuns.ButtonCompare();
+            this.third_btn = new ButtonRuns.ButtonCompare();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -52,6 +52,7 @@
             // 
             // stop_btn
             // 
+            this.stop_btn.Enabled = false;
             this.stop_btn.Location = new System.Drawing.Point(239, 26);
             this.stop_btn.Name = "stop_btn";
             this.stop_btn.Size = new System.Drawing.Size(75, 23);
@@ -62,6 +63,7 @@
             // 
             // pause_btn
             // 
+            this.pause_btn.Enabled = false;
             this.pause_btn.Location = new System.Drawing.Point(129, 26);
             this.pause_btn.Name = "pause_btn";
             this.pause_btn.Size = new System.Drawing.Size(75, 23);
