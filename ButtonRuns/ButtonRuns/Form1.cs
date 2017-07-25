@@ -20,7 +20,7 @@ namespace ButtonRuns
         Thread t2;
         Thread t3;
 
-        Random r;
+        static Random r;
 
         MoveDel move;
 
@@ -39,6 +39,19 @@ namespace ButtonRuns
         {
             button.Location = new Point(button.Location.X + r.Next(0,10), button.Location.Y);
             Lider();
+
+            Finish(button);
+        }
+
+        private void Finish(Button button)
+        {
+            if (button.Location.X > (pictureBox1.Location.X-button.Width))
+            {
+                pause_btn_Click(new object(), new EventArgs());
+                start_btn.Enabled = false;
+
+                MessageBox.Show($"Выиграл игрок {button.Text}");
+            }
         }
 
         private void Lider()
@@ -128,6 +141,9 @@ namespace ButtonRuns
             first_btn.Location = new Point(31, first_btn.Location.Y);
             second_btn.Location = new Point(31, second_btn.Location.Y);
             third_btn.Location = new Point(31, third_btn.Location.Y);
+
+            foreach (ButtonCompare x in buttonsMassiv)
+                x.BackColor = SystemColors.Control;
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)

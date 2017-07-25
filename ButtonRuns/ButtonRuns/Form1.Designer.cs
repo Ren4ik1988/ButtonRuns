@@ -56,7 +56,7 @@
             this.stop_btn.Location = new System.Drawing.Point(239, 26);
             this.stop_btn.Name = "stop_btn";
             this.stop_btn.Size = new System.Drawing.Size(75, 23);
-            this.stop_btn.TabIndex = 1;
+            this.stop_btn.TabIndex = 2;
             this.stop_btn.Text = "Stop";
             this.stop_btn.UseVisualStyleBackColor = true;
             this.stop_btn.Click += new System.EventHandler(this.stop_btn_Click);
@@ -77,42 +77,42 @@
             this.start_btn.Location = new System.Drawing.Point(19, 26);
             this.start_btn.Name = "start_btn";
             this.start_btn.Size = new System.Drawing.Size(75, 23);
-            this.start_btn.TabIndex = 1;
+            this.start_btn.TabIndex = 0;
             this.start_btn.Text = "Start";
             this.start_btn.UseVisualStyleBackColor = true;
             this.start_btn.Click += new System.EventHandler(this.start_btn_Click);
             // 
             // first_btn
             // 
-            this.first_btn.Location = new System.Drawing.Point(31, 25);
+            this.first_btn.Location = new System.Drawing.Point(12, 36);
             this.first_btn.Name = "first_btn";
             this.first_btn.Size = new System.Drawing.Size(75, 23);
-            this.first_btn.TabIndex = 1;
-            this.first_btn.Text = "button1";
+            this.first_btn.TabIndex = 3;
+            this.first_btn.Text = "Алина";
             this.first_btn.UseVisualStyleBackColor = true;
             // 
             // second_btn
             // 
-            this.second_btn.Location = new System.Drawing.Point(31, 54);
+            this.second_btn.Location = new System.Drawing.Point(12, 65);
             this.second_btn.Name = "second_btn";
             this.second_btn.Size = new System.Drawing.Size(75, 23);
-            this.second_btn.TabIndex = 1;
-            this.second_btn.Text = "button1";
+            this.second_btn.TabIndex = 4;
+            this.second_btn.Text = "Ренат";
             this.second_btn.UseVisualStyleBackColor = true;
             // 
             // third_btn
             // 
-            this.third_btn.Location = new System.Drawing.Point(31, 83);
+            this.third_btn.Location = new System.Drawing.Point(12, 94);
             this.third_btn.Name = "third_btn";
             this.third_btn.Size = new System.Drawing.Size(75, 23);
-            this.third_btn.TabIndex = 1;
-            this.third_btn.Text = "button1";
+            this.third_btn.TabIndex = 5;
+            this.third_btn.Text = "Уська";
             this.third_btn.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ButtonRuns.Properties.Resources.Finish;
-            this.pictureBox1.Location = new System.Drawing.Point(842, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(343, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(10, 121);
             this.pictureBox1.TabIndex = 2;
@@ -122,7 +122,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1268, 261);
+            this.ClientSize = new System.Drawing.Size(362, 261);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.third_btn);
             this.Controls.Add(this.second_btn);
