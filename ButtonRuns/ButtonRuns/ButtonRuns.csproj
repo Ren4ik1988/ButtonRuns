@@ -85,5 +85,14 @@
   <ItemGroup>
     <None Include="Resources\Finish.bmp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\94_Truck_snd_run03.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Final_%28iz_filma_Usatyi_njan%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon1.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
